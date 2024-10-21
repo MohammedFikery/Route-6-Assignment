@@ -1,0 +1,394 @@
+:root {
+  --main-color: rgb(1, 120, 254);
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  line-height: 1.4;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  width: 100%;
+  background-color: #f5f5f5;
+  color: #4e4e4e;
+}
+img {
+  width: 100%;
+  display: block;
+}
+a {
+  color: inherit;
+}
+/* ==============================start nav============================== */
+
+a {
+  color: #1e1e1e;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+.navbar-brand {
+  font-size: 28px;
+}
+a:hover {
+  color: #0078ff;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.active {
+  position: relative;
+}
+.active::before {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.navbar .nav-hover a {
+  position: relative;
+}
+.navbar .nav-hover a::before {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: all 1s;
+}
+.navbar .nav-hover:hover a::before {
+  width: 100%;
+}
+/* ==============================start nav============================== */
+/* ==============================start home============================== */
+
+#Home .home-content h1 {
+  font-size: 4.5rem;
+}
+#Home .home-content h3 {
+  font-size: 2.5rem;
+}
+.home-content h3::before {
+  content: "";
+  animation: typing 20s infinite;
+}
+@keyframes typing {
+  0% {
+    content: "";
+  }
+  1.79% {
+    content: "d";
+  }
+  3.57% {
+    content: "De";
+  }
+  5.36% {
+    content: "Des";
+  }
+  7.14% {
+    content: "Desi";
+  }
+  8.93% {
+    content: "Desig";
+  }
+  10.71% {
+    content: "Design";
+  }
+  12.50% {
+    content: "Designe";
+  }
+  14.29% {
+    content: "Designer";
+  }
+  16.07% {
+    content: "Designe";
+  }
+  17.86% {
+    content: "Design";
+  }
+  19.64% {
+    content: "Desig";
+  }
+  21.43% {
+    content: "Desi";
+  }
+  23.21% {
+    content: "Des";
+  }
+  25.00% {
+    content: "De";
+  }
+  26.79% {
+    content: "Dev";
+  }
+  28.57% {
+    content: "Deve";
+  }
+  30.36% {
+    content: "Devel";
+  }
+  32.14% {
+    content: "Develo";
+  }
+  33.93% {
+    content: "Develop";
+  }
+  35.71% {
+    content: "Develope";
+  }
+  37.50% {
+    content: "Developer";
+  }
+  39.29% {
+    content: "Develope";
+  }
+  41.07% {
+    content: "Develop";
+  }
+  42.86% {
+    content: "Develo";
+  }
+  44.64% {
+    content: "Devel";
+  }
+  46.43% {
+    content: "Deve";
+  }
+  48.21% {
+    content: "Dev";
+  }
+  50.00% {
+    content: "De";
+  }
+  51.79% {
+    content: "D";
+  }
+  53.57% {
+    content: "";
+  }
+  55.36% {
+    content: "F";
+  }
+  57.14% {
+    content: "Fr";
+  }
+  58.93% {
+    content: "Fre";
+  }
+  60.71% {
+    content: "Free";
+  }
+  62.50% {
+    content: "Freel";
+  }
+  64.29% {
+    content: "Freela";
+  }
+  66.07% {
+    content: "Freelan";
+  }
+  67.86% {
+    content: "Freelanc";
+  }
+  69.64% {
+    content: "Freelance";
+  }
+  71.43% {
+    content: "Freelancer";
+  }
+  73.21% {
+    content: "Freelance";
+  }
+  75.00% {
+    content: "Freelanc";
+  }
+  76.79% {
+    content: "Freelan";
+  }
+  78.57% {
+    content: "Freela";
+  }
+  80.36% {
+    content: "Freel";
+  }
+  82.14% {
+    content: "Free";
+  }
+  83.93% {
+    content: "Fre";
+  }
+  85.71% {
+    content: "Fr";
+  }
+  87.50% {
+    content: "F";
+  }
+  89.29% {
+    content: "";
+  }
+  91.07% {
+    content: "";
+  }
+  92.86% {
+    content: "";
+  }
+  94.64% {
+    content: "";
+  }
+  96.43% {
+    content: "";
+  }
+  98.21% {
+    content: "";
+  }
+  100% {
+    content: "";
+  }
+}
+#Home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* ==============================End home============================== */
+/* ==============================start about============================== */
+#About .about-desc h5 {
+  position: relative;
+}
+#About .about-desc h5::before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 0;
+  width: 20%;
+  height: 4px;
+  background-color: var(--main-color);
+}
+/* ==============================End about============================== */
+/* ==============================start Services============================== */
+.main-information {
+  position: relative;
+}
+.main-information h3 {
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+.main-information ::after {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3%;
+  height: 5px;
+  background-color: var(--main-color);
+}
+.icon-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 5px solid var(--main-color);
+  border-radius: 50%;
+  padding: 25px;
+}
+.icon-style i {
+  font-size: 24px;
+}
+
+#Services .icon-hover {
+  transition: 0.25s;
+}
+#Services .icon-hover:hover {
+  background-color: var(--main-color);
+  border: 5px solid rgba(255, 255, 255, 0.658) !important;
+}
+/* ==============================End Services============================== */
+/* ==============================Start Counter============================== */
+#Counter {
+  background-image: linear-gradient(#0077ffc4, #0077ffa8),
+    url(/images/counters-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* ==============================End Counter============================== */
+/* ==============================start Portfolio============================== */
+#Portfolio .Portfolio-img {
+  overflow: hidden;
+}
+#Portfolio .Portfolio-img img {
+  transition: 0.5s;
+}
+#Portfolio img:hover {
+  transform: scale(1.2);
+}
+/* ==============================End Portfolio============================== */
+/* ==============================start Blog============================== */
+.avatar {
+  width: 32px;
+  height: 32px;
+  margin-right: 4px;
+  overflow: hidden;
+}
+/* ==============================End Blog============================== */
+/* ==============================End Blog============================== */
+#Contact {
+  background-image: linear-gradient(#0077ffc4, #0077ffa8),
+    url(/images/overlay-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* ==============================End Blog============================== */
+/* ==============================start Contact============================== */
+#Contact .Contact-information {
+  position: relative;
+}
+#Contact .Contact-information::after {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 10%;
+  transform: translateX(-50%);
+  width: 15%;
+  height: 5px;
+  background-color: var(--main-color);
+}
+#Contact ul li {
+  display: inline-block;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  padding: 15px;
+  margin: 5px;
+  font-size: 19.2px;
+}
+#Contact ul li a {
+  height: 30px;
+  width: 30px;
+}
+#Contact ul li:hover {
+  background-color: var(--main-color);
+  color: white;
+  border: 2px solid var(--main-color);
+}
+/* ==============================End Contact============================== */
+footer {
+  background-color: rgb(0, 98, 211);
+}
