@@ -71,6 +71,19 @@ a:hover {
 .navbar .nav-hover:hover a::before {
   width: 100%;
 }
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu .dropdown-menu {
+  display: none;
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+}
+.dropdown-submenu:hover .dropdown-menu {
+  display: block;
+}
+
 /* ==============================start nav============================== */
 /* ==============================start home============================== */
 
@@ -339,7 +352,52 @@ a:hover {
 #Portfolio img:hover {
   transform: scale(1.2);
 }
+#Portfolio .icon-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--main-color);
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+#Portfolio .icon-style i {
+  font-size: 24px;
+  color: var(--main-color);
+}
 /* ==============================End Portfolio============================== */
+/* ==============================start carousel============================== */
+#carousel {
+  background-image: linear-gradient(#0077ffc4, #0077ffa8),
+    url(../images/overlay-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.carousel-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: inline-block;
+}
+div.carousel-item.active::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.carousel-indicators [data-bs-target]::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+}
+/* ==============================End carousel============================== */
 /* ==============================start Blog============================== */
 .avatar {
   width: 32px;
